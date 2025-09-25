@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shweta - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Epilogue', sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #f1f8ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .resume-container {
+            width: 190mm;
+            min-height: 260mm;
+            background: #fff;
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: linear-gradient(to bottom right, #0a090a, #5383d3);
+            color: #fff;
+            padding: 25px 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .sidebar img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 4px solid #fff;
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .sidebar h3 {
+            font-size: 16px;
+            margin-top: 20px;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 4px;
+        }
+
+        .sidebar p,
+        .sidebar li {
+            font-size: 14px;
+            margin: 6px 0;
+            line-height: 1.6;
+        }
+
+        .sidebar a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        .main {
+            padding: 20px 25px;
+            background-color: #fdfdfd;
+        }
+
+        .section {
+            margin-bottom: 18px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #333;
+            font-weight: 700;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #2575fc;
+            padding-bottom: 4px;
+        }
+
+        .section p {
+            font-size: 15px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .job-date {
+            font-style: italic;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 30px;
+            padding-left: 15px;
+        }
+
+        .skills li {
+            border-left: 3px solid #2575fc;
+            padding-left: 10px;
+            position: relative;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                border-radius: 0;
+                width: 100%;
+            }
+
+            .sidebar img {
+                display: none;
+            }
+
+            .sidebar {
+                color: #000;
+                background: #eaeaea;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <img src="shweta-img.png" alt="Shweta" />
+            <h1>Shweta</h1>
+
+            <h3>Contact</h3>
+            <p><strong>Email:</strong><br /><a href="mailto:Shwetabisht2807@gmail.com">Shwetabisht2807@gmail.com</a></p>
+            <p><strong>Phone:</strong><br />7982436781</p>
+            <p><strong>Location:</strong><br />Durga Vihar, Delhi</p>
+
+            <h3>Personal Details</h3>
+            <ul>
+                <li><strong>DOB:</strong> 19/07/2003</li>
+                <li><strong>Nationality:</strong> Indian</li>
+                <li><strong>Father's Name:</strong> Sidhveer Singh</li>
+                <li><strong>Gender:</strong> Female</li>
+                <li><strong>Marital Status:</strong> Single</li>
+                <li><strong>Languages:</strong> English, Hindi</li>
+            </ul>
+
+            <h3>Hobbies</h3>
+            <ul>
+                <li>Cooking</li>
+                <li>Travelling</li>
+                <li>Reading Books</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main">
+            <div class="section">
+                <h2>Professional Summary</h2>
+                <p>
+                    Recent graduate with a strong academic background and a passion for learning, seeking an entry-level
+                    position where I can apply my skills, contribute to team success, and grow professionally.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>B.Sc</strong> – 2024<br />Govt. P.G. College, Kotdwara, Uttarakhand – 1st Division</li>
+                    <li><strong>Higher Secondary (12<sup>th</sup>)</strong> – 2020<br />Uttarakhand Board – 1st Division
+                    </li>
+                    <li><strong>Secondary School (10<sup>th</sup>)</strong> – 2018<br />Uttarakhand Board – 1st Division
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Soft Skills</h2>
+                <ul>
+                    <li>Good communication skills</li>
+                    <li>Quick learner and adaptable</li>
+                    <li>Positive attitude</li>
+                    <li>Ability to work in a team</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Key Skills</h2>
+                <ul class="skills">
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Time Management</li>
+                    <li>Basic Computer Knowledge</li>
+                    <li>Problem Solving</li>
+                    <li>Willingness to Learn</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Declaration</h2>
+                <p>
+                    I hereby declare that the information provided above is true to the best of my knowledge and belief.
+                </p>
+                <br />
+                <p><strong>Date:</strong> ____________</p>
+                <p><strong>Place:</strong> ____________</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
